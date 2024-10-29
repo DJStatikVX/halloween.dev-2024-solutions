@@ -70,11 +70,6 @@ function battleHorde(zombies, humans) {
     }
   }
 
-  // Tie
-  if (extraHumanPower === extraZombiePower) {
-    return 'x'
-  }
-
   // Humans won
   if (extraHumanPower > 0) {
     return `${extraHumanPower}h`
@@ -85,5 +80,6 @@ function battleHorde(zombies, humans) {
     return `${extraZombiePower}z`
   }
 
+  // Tie
   return 'x'
 }
